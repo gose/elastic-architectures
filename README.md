@@ -59,8 +59,20 @@ This pattern represents yet another common data flow for data into Elastic.  Ela
 
 ![](images/architecture-7.png)
 
+## Architecture #8
+
+Using a reverse-proxy / load-balancer in your architecture provides two key benefits:
+
+- Bit counters on inputs
+- Resiliency around ingest
+
+![](images/architecture-8.png)
+
+------
+
 ### Contribute
 
 You can add an architecture if it is new or a variant of an existing one.  To do so, fork the repo, increment the last architecture number, and submit a pull request.
 
 For example, if the last architecture is labeled #23, submit yours and label #24.  This makes it easy to uniquely identify a specific architecture.  Update the REAME.md to include your architecture with a short description about it.
+ 
