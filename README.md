@@ -4,13 +4,13 @@ This directory provides a series of layouts for Elasticsearch clusters.  The goa
 
 ## Architecture #1
 
-A relatively standard pattern of having one Elastic cluter per environment, with each environment having its own Kibana instance.  Each cluster is ingesting data from data sources only from its environment.
+A relatively standard pattern of having one Elastic cluster per environment, with each environment having its own Kibana instance.  Each cluster is ingesting data from data sources only from its environment.
 
 ![architecture-1.png](images/architecture-1.png)
 
 ## Architecture #2
 
-A pattern involving one Elastic cluter per environment, but consolidating Kibana activity to a single Kibana CCS Head for all environments.  Typically, this Kibana instance can be read-only for the majority of users accessing it.  A read-write Kibana instance can be deployed into a lower environment that gives users read-write permissions to create & edit Dashboards, ML jobs, etc.
+A pattern involving one Elastic cluster per environment, but consolidating Kibana activity to a single Kibana CCS Head for all environments.  Typically, this Kibana instance can be read-only for the majority of users accessing it.  A read-write Kibana instance can be deployed into a lower environment that gives users read-write permissions to create & edit Dashboards, ML jobs, etc.
 
 Pros:
 
