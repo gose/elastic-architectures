@@ -31,6 +31,16 @@ Pros:
 
 ![architecture-3.png](images/architecture-3.png)
 
+## Architecture #4
+
+A pattern involving a separate production Elastic cluster set to isolate prod from lower environments.  One or two Kibana CCS heads can be used to view cross sections of the data being collected.
+
+Pros:
+
+- Better stability for production
+
+![architecture-4.png](images/architecture-4.png)
+
 ### Contribute
 
 You can add an architecture if it is new or a variant of an existing one.  To do so, fork the repo, increment the last architecture number, and submit a pull request.
