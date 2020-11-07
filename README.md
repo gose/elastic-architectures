@@ -2,6 +2,8 @@
 
 This directory provides a series of layouts for Elasticsearch clusters.  The goal is to share architectures of various data flows for environments using the Elastic Stack.
 
+Architectures are *not* ranked by popularity, simply by a number so they can easily be referenced.  Some architectures are not particularly great, but represented for thoroughness.
+
 ## Architecture #1
 
 A relatively standard pattern of having one Elastic cluster per environment, with each environment having its own Kibana instance.  Each cluster is ingesting data from data sources only from its environment.
@@ -17,6 +19,17 @@ Pros:
 - Having a Kibana CCS Head allows you to see across all environments to compare behavior
 
 ![architecture-2.png](images/architecture-2.png)
+
+## Architecture #3
+
+A pattern involving one Elastic cluster per data source, with a Kibana CCS Head.
+
+Pros:
+
+- One pane of glass to see all data
+- Isolation between data sources
+
+![architecture-3.png](images/architecture-3.png)
 
 ### Contribute
 
