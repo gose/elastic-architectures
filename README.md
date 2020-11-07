@@ -8,7 +8,7 @@ Architectures are *not* ranked by popularity, simply by a number so they can eas
 
 A relatively standard pattern of having one Elastic cluster per environment, with each environment having its own Kibana instance.  Each cluster is ingesting data from data sources only from its environment.
 
-![architecture-1.png](images/architecture-1.png)
+![](images/architecture-1.png)
 
 ## Architecture #2
 
@@ -18,7 +18,7 @@ Pros:
 
 - Having a Kibana CCS Head allows you to see across all environments to compare behavior
 
-![architecture-2.png](images/architecture-2.png)
+![](images/architecture-2.png)
 
 ## Architecture #3
 
@@ -29,7 +29,7 @@ Pros:
 - One pane of glass to see all data
 - Isolation between data sources
 
-![architecture-3.png](images/architecture-3.png)
+![](images/architecture-3.png)
 
 ## Architecture #4
 
@@ -39,7 +39,25 @@ Pros:
 
 - Better stability for production
 
-![architecture-4.png](images/architecture-4.png)
+![](images/architecture-4.png)
+
+## Architecture #5
+
+This pattern represents one of the most common data flows for data into Elastic.  Elastic Agent is installed on a number of systems, shipping data directly into an Elasticsearch cluster.
+
+![](images/architecture-5.png)
+
+## Architecture #6
+
+This pattern represents another common data flow for data into Elastic.  Elastic Agent is installed on a number of systems, sending data to Logstash, which in turns ships the data into Elasticsearch.
+
+![](images/architecture-6.png)
+
+## Architecture #7
+
+This pattern represents yet another common data flow for data into Elastic.  Elastic Agent is installed on a number of systems, sending data to a Message Queue.  Logstash then pulls from the Message Queue, and ships the data into Elasticsearch.
+
+![](images/architecture-7.png)
 
 ### Contribute
 
