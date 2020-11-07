@@ -68,6 +68,18 @@ Using a reverse-proxy / load-balancer in your architecture provides two key bene
 
 ![](images/architecture-8.png)
 
+## Architecture #9
+
+A common pattern for companies with data centers that are moving to Cloud is to stand up new services in their Cloud provider.  This pattern gives them flexibility in managing an Elastic cluster with the ability to dynamically provision VMs or Clusters (using either cloud.elastic.co or ECE/ECK).
+
+![](images/architecture-9.png)
+
+## Architecture #10
+
+For companies with Data Centers and a Cloud provider, this pattern leverages Cross Cluster Search (CCS) to avoid egress fees.  Users query the clusters through one Kibana instance.
+
+![](images/architecture-10.png)
+
 ------
 
 ### Contribute
