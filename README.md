@@ -80,6 +80,12 @@ For companies with Data Centers and a Cloud provider, this pattern leverages Cro
 
 ![](images/architecture-10.png)
 
+## Architecture #11
+
+Many companies write raw data to a Data Lake or object store like S3 for long term retention.  To accommodate this pattern, Elastic is often used as the System of Analysis.  This architecture highlights the role of Logstash to filter raw ingest and send it both to the Data Lake and to Elastic.  HAProxy is used to meter key flow points.
+
+![](images/architecture-11.png)
+
 ------
 
 ### Contribute
