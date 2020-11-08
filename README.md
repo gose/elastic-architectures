@@ -86,6 +86,20 @@ Many companies write raw data to a Data Lake or object store like S3 for long te
 
 ![](images/architecture-11.png)
 
+## Architecture #12
+
+Disaster Recovery comes in many shapes and sizes.  From offsite backups to Active/Active systems with full redundancy, there are many considerations to be made.  This pattern leverages Cross Cluster Replication (CCR) to create an Active/Passive cluster topology.
+
+More patterns involving CCR are available in the [CCR documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/xpack-ccr.html).
+
+![](images/architecture-12.png)
+
+## Architecture #13
+
+Dedicated node types are recommended in clusters with 6 or more nodes.  This practice isolates [node roles](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-node.html) so they have dedicated resources to carry out their function.
+
+![](images/architecture-13.png)
+
 ------
 
 ### Contribute
