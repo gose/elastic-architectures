@@ -49,7 +49,7 @@ This pattern represents one of the most common data flows for data into Elastic.
 
 ## Architecture #6
 
-This pattern represents another common data flow for data into Elastic.  Elastic Agent is installed on a number of systems, sending data to Logstash, which in turns ships the data into Elasticsearch.
+This pattern represents another common data flow for data into Elastic.  Elastic Agent is installed on a number of systems, sending data to Logstash, which in turn ships the data into Elasticsearch.
 
 ![](images/architecture-6.png)
 
