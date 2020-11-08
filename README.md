@@ -43,19 +43,19 @@ Pros:
 
 ## Architecture #5
 
-This pattern represents one of the most common data flows for data into Elastic.  Elastic Agent is installed on a number of systems, shipping data directly into an Elasticsearch cluster.
+This pattern represents one of the most common data flows for data into Elasticsearch.  Elastic Beats are installed on a number of systems, shipping data directly into Elasticsearch.
 
 ![](images/architecture-5.png)
 
 ## Architecture #6
 
-This pattern represents another common data flow for data into Elastic.  Elastic Agent is installed on a number of systems, sending data to Logstash, which in turn ships the data into Elasticsearch.
+This pattern represents another common data flow for data into Elasticsearch.  Elastic Beats are installed on a number of systems, sending data to Logstash, which in turn ships the data into Elasticsearch.
 
 ![](images/architecture-6.png)
 
 ## Architecture #7
 
-This pattern represents yet another common data flow for data into Elastic.  Elastic Agent is installed on a number of systems, sending data to a Message Queue.  Logstash then pulls from the Message Queue, and ships the data into Elasticsearch.
+This pattern represents yet another common data flow for data into Elasticsearch.  Elastic Beats are installed on a number of systems, sending data to a Message Queue.  Logstash then pulls from the Message Queue, and ships the data into Elasticsearch.
 
 ![](images/architecture-7.png)
 
@@ -70,7 +70,7 @@ Using a reverse-proxy / load-balancer in your architecture provides two key bene
 
 ## Architecture #9
 
-A common pattern for companies with data centers that are moving to Cloud is to stand up new services in their Cloud provider.  This pattern gives them flexibility in managing an Elastic cluster with the ability to dynamically provision VMs or Clusters (using either cloud.elastic.co or ECE/ECK).
+A common pattern for companies with data centers that are moving to Cloud is to stand up new services in their Cloud provider.  This pattern gives them flexibility in managing an Elastic cluster with the ability to dynamically provision VMs or Clusters (using either [cloud.elastic.co](https://cloud.elastic.co) or [ECE](https://www.elastic.co/ece)/[ECK](https://www.elastic.co/elastic-cloud-kubernetes).
 
 ![](images/architecture-9.png)
 
@@ -82,7 +82,7 @@ For companies with Data Centers and a Cloud provider, this pattern leverages Cro
 
 ## Architecture #11
 
-Many companies write raw data to a Data Lake or object store like S3 for long term retention.  To accommodate this pattern, Elastic is often used as the System of Analysis.  This architecture highlights the role of Logstash to filter raw ingest and send it both to the Data Lake and to Elastic.  HAProxy is used to meter key flow points.
+Many companies write raw data to a Data Lake or object store like S3 for long term retention.  To accompany this pattern, Elastic is often used as the System of Analysis.  This architecture highlights the role of Logstash to filter raw ingest and send it both to the Data Lake and to Elastic.  HAProxy is used to meter key flow points.
 
 ![](images/architecture-11.png)
 
